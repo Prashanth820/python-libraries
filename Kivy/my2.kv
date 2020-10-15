@@ -1,0 +1,14 @@
+<Button>:
+    font_size: 40
+    color: 0.1,0.5,0.6,1 # between -1 & 1
+    size_hint: 0.5,0.5  # 50% height & 50% width
+
+<FloatLayout>:
+    Button:
+        text: "First"
+        pos_hint: {"x":0.5, "top":1} # between 0 & 1 + bottom left is 0,0
+
+    Button:
+        id: btn
+        text:"Second" if btn.state == "normal" else "Third"
+        background_color: 0.3,0.4,0.5,1

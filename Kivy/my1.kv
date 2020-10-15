@@ -1,0 +1,30 @@
+<MyGrid>:
+
+    name: name  # Global variable name references the id name
+    email: email  # Global variable email references the id email
+
+    GridLayout:
+        cols:1
+        size: root.width - 200, root.height -200
+        pos: 100, 100
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name: "
+
+            TextInput:
+                id: name  # <- Add id
+                multiline:False
+
+            Label:
+                text: "Email: "
+
+            TextInput:
+                id: email  # <-Add id
+                multiline:False
+
+        Button:
+            text:"Submit"
+            on_press: root.btn() # <- Add on_press
