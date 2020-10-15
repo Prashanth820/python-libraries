@@ -1,0 +1,21 @@
+import turtle
+
+a = turtle.Turtle()
+a.color('red')
+a.pensize(5)
+a.shape('turtle')
+
+a.forward(100)
+a.left(90)
+a.penup()
+a.backward(100)
+a.right(90)
+a.pendown()
+a.color('green')
+a.forward(100)
+
+b = turtle.Turtle()
+b.color('blue')
+b.pensize(20)
+b.backward(100)
+b.speed(1)
