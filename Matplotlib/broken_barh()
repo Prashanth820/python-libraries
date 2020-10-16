@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt 
+  
+ 
+plt.title('GEEKSFORGEEKS - EXAMPLE') 
+  
+ 
+plt.xlabel('x-label') 
+  
+ 
+plt.ylabel('y-label') 
+  
+x_1 = [(1, 4), (10, 7)] 
+y_1 = (2, 2) 
+  
+ 
+plt.broken_barh(x_1, y_1, facecolors ='green') 
+  
+x_2 = [(10, 1), (15, 4), (25, 6)] 
+y_2 = (6, 2) 
+  
+ 
+plt.broken_barh(x_2, y_2, facecolors ='cyan') 
+  
+plt.show() 
